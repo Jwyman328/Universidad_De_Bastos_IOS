@@ -3,23 +3,48 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72A6D4326B6E9450003CF24 /* MocksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D4226B6E9450003CF24 /* MocksData.swift */; };
+		B72A6D7B26BEDFAE0003CF24 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D7A26BEDFAE0003CF24 /* CustomColors.swift */; };
+		B72A6D8426BEF6650003CF24 /* CardStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D8326BEF6650003CF24 /* CardStyles.swift */; };
+		B72A6D8726BEFAA80003CF24 /* CenterTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */; };
+		B72A6D8E26BF1E770003CF24 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D8D26BF1E770003CF24 /* VideoList.swift */; };
 		B7559F9626ADB81400EDAF46 /* Universidad_De_BastosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7559F9526ADB81400EDAF46 /* Universidad_De_BastosApp.swift */; };
 		B7559F9826ADB81400EDAF46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7559F9726ADB81400EDAF46 /* ContentView.swift */; };
 		B7559F9A26ADB81700EDAF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7559F9926ADB81700EDAF46 /* Assets.xcassets */; };
 		B7559F9D26ADB81700EDAF46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7559F9C26ADB81700EDAF46 /* Preview Assets.xcassets */; };
+		B75DDB2426B598F7007FE393 /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DDB2326B598F7007FE393 /* VideoViewModel.swift */; };
+		B75DDB2826B5BE54007FE393 /* VideoPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DDB2726B5BE54007FE393 /* VideoPreview.swift */; };
+		B75DDB2C26B5EFBB007FE393 /* AsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = B75DDB2B26B5EFBB007FE393 /* AsyncImage */; };
+		B75DDB3026B6DDA7007FE393 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = B75DDB2F26B6DDA7007FE393 /* URLImageStore */; };
+		B75DDB3226B6DDA7007FE393 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = B75DDB3126B6DDA7007FE393 /* URLImage */; };
+		B75DDB3526B6DF10007FE393 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DDB3426B6DF10007FE393 /* RemoteImage.swift */; };
+		B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */; };
+		B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */; };
+		B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B72A6D4226B6E9450003CF24 /* MocksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocksData.swift; sourceTree = "<group>"; };
+		B72A6D7A26BEDFAE0003CF24 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		B72A6D8326BEF6650003CF24 /* CardStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyles.swift; sourceTree = "<group>"; };
+		B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTitle.swift; sourceTree = "<group>"; };
+		B72A6D8D26BF1E770003CF24 /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
 		B7559F9226ADB81400EDAF46 /* Universidad De Bastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universidad De Bastos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7559F9526ADB81400EDAF46 /* Universidad_De_BastosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universidad_De_BastosApp.swift; sourceTree = "<group>"; };
 		B7559F9726ADB81400EDAF46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7559F9926ADB81700EDAF46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7559F9C26ADB81700EDAF46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7559F9E26ADB81700EDAF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B75DDB2326B598F7007FE393 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		B75DDB2726B5BE54007FE393 /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
+		B75DDB3426B6DF10007FE393 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDeVideosView.swift; sourceTree = "<group>"; };
+		B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getVideos.swift; sourceTree = "<group>"; };
+		B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +52,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B75DDB3026B6DDA7007FE393 /* URLImageStore in Frameworks */,
+				B75DDB3226B6DDA7007FE393 /* URLImage in Frameworks */,
+				B75DDB2C26B5EFBB007FE393 /* AsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B72A6D4026B6E92C0003CF24 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B72A6D7926BEDF960003CF24 /* Styles */,
+				B72A6D4126B6E9310003CF24 /* Mocks */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B72A6D4126B6E9310003CF24 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B72A6D4226B6E9450003CF24 /* MocksData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B72A6D7926BEDF960003CF24 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				B72A6D7A26BEDFAE0003CF24 /* CustomColors.swift */,
+				B72A6D8326BEF6650003CF24 /* CardStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		B7559F8926ADB81400EDAF46 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +106,11 @@
 		B7559F9426ADB81400EDAF46 /* Universidad De Bastos */ = {
 			isa = PBXGroup;
 			children = (
+				B72A6D4026B6E92C0003CF24 /* Shared */,
+				B75DDB2226B598D9007FE393 /* ViewModels */,
+				B7D47CD826ADBC970027A8BA /* Views */,
+				B7D47CD726ADBC8C0027A8BA /* Network */,
+				B7D47CD626ADBC5E0027A8BA /* Models */,
 				B7559F9526ADB81400EDAF46 /* Universidad_De_BastosApp.swift */,
 				B7559F9726ADB81400EDAF46 /* ContentView.swift */,
 				B7559F9926ADB81700EDAF46 /* Assets.xcassets */,
@@ -67,6 +126,74 @@
 				B7559F9C26ADB81700EDAF46 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B75DDB2226B598D9007FE393 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B75DDB2326B598F7007FE393 /* VideoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B75DDB3726B6DF1E007FE393 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B75DDB3426B6DF10007FE393 /* RemoteImage.swift */,
+				B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B7D47CD626ADBC5E0027A8BA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B7D47CE326ADEBB20027A8BA /* Videos */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B7D47CD726ADBC8C0027A8BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B7D47CDE26ADBD5D0027A8BA /* Videos */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B7D47CD826ADBC970027A8BA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B75DDB3726B6DF1E007FE393 /* Shared */,
+				B7D47CD926ADBCDA0027A8BA /* CentroDeVideos */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7D47CD926ADBCDA0027A8BA /* CentroDeVideos */ = {
+			isa = PBXGroup;
+			children = (
+				B75DDB2726B5BE54007FE393 /* VideoPreview.swift */,
+				B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */,
+				B72A6D8D26BF1E770003CF24 /* VideoList.swift */,
+			);
+			path = CentroDeVideos;
+			sourceTree = "<group>";
+		};
+		B7D47CDE26ADBD5D0027A8BA /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		B7D47CE326ADEBB20027A8BA /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +212,11 @@
 			dependencies = (
 			);
 			name = "Universidad De Bastos";
+			packageProductDependencies = (
+				B75DDB2B26B5EFBB007FE393 /* AsyncImage */,
+				B75DDB2F26B6DDA7007FE393 /* URLImageStore */,
+				B75DDB3126B6DDA7007FE393 /* URLImage */,
+			);
 			productName = "Universidad De Bastos";
 			productReference = B7559F9226ADB81400EDAF46 /* Universidad De Bastos.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +244,10 @@
 				Base,
 			);
 			mainGroup = B7559F8926ADB81400EDAF46;
+			packageReferences = (
+				B75DDB2A26B5EFBB007FE393 /* XCRemoteSwiftPackageReference "AsyncImage" */,
+				B75DDB2E26B6DDA7007FE393 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = B7559F9326ADB81400EDAF46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +274,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */,
 				B7559F9826ADB81400EDAF46 /* ContentView.swift in Sources */,
+				B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */,
+				B75DDB3526B6DF10007FE393 /* RemoteImage.swift in Sources */,
+				B72A6D8E26BF1E770003CF24 /* VideoList.swift in Sources */,
+				B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */,
+				B75DDB2426B598F7007FE393 /* VideoViewModel.swift in Sources */,
+				B72A6D7B26BEDFAE0003CF24 /* CustomColors.swift in Sources */,
+				B72A6D8726BEFAA80003CF24 /* CenterTitle.swift in Sources */,
+				B72A6D4326B6E9450003CF24 /* MocksData.swift in Sources */,
+				B72A6D8426BEF6650003CF24 /* CardStyles.swift in Sources */,
+				B75DDB2826B5BE54007FE393 /* VideoPreview.swift in Sources */,
 				B7559F9626ADB81400EDAF46 /* Universidad_De_BastosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +475,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B75DDB2A26B5EFBB007FE393 /* XCRemoteSwiftPackageReference "AsyncImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zzzzeu/AsyncImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+		B75DDB2E26B6DDA7007FE393 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B75DDB2B26B5EFBB007FE393 /* AsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75DDB2A26B5EFBB007FE393 /* XCRemoteSwiftPackageReference "AsyncImage" */;
+			productName = AsyncImage;
+		};
+		B75DDB2F26B6DDA7007FE393 /* URLImageStore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75DDB2E26B6DDA7007FE393 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImageStore;
+		};
+		B75DDB3126B6DDA7007FE393 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75DDB2E26B6DDA7007FE393 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B7559F8A26ADB81400EDAF46 /* Project object */;
 }
