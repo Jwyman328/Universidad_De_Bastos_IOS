@@ -18,7 +18,6 @@ class QueryService {
     
     
     func getVideos(){
-    //    var starWars = "https://swapi.dev/api/people/1"
         var getVideoUri = "https://universidad-de-bastos.herokuapp.com/videos/"
         var token = "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1OTYzMDMwMDF9.xNOY3NJKDO-u1UG6Ulse7c0T51PtJ0fwoJWb-0B4gFE"
         var getvideosUrl = URL(string: getVideoUri)!
@@ -32,7 +31,6 @@ class QueryService {
 
         
         let responseDataTask: Void = URLSession.shared.dataTask(with: getVideosRequest, completionHandler: self.handleResponse).resume()
-        
     }
 
     func handleResponse(data:Data?, response:URLResponse?, error:Error?) -> Void {

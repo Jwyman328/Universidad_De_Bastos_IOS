@@ -30,23 +30,27 @@ struct VideoPreview: View {
             return Color.white
         }
     }
-    
+    func testit(){
+        print("test")
+    }
 
     var body: some View {
         GeometryReader {
             geometry in
             VStack(alignment:.center){
                 RemoteImage(imageItem: imageURL)
-                    .frame(width: geometry.size.width, height: geometry.size.height / 2, alignment: .trailing).cornerRadius(CardStyles.CardRadius)
+                    .frame(width: geometry.size.width, height: geometry.size.height / 2, alignment: .trailing)
+                    .cornerRadius(CardStyles.CardRadius)
 
                 Spacer()
                 HStack {
-                    Text(title).font(.title2)
+                    Text(title)
+                        .font(.title2)
                         .frame( alignment: .leading)
                 }
-                .frame(maxWidth:.infinity, alignment: .leading)
-                .padding()
-                Spacer()
+                    .frame(maxWidth:.infinity, alignment: .leading)
+                    .padding()
+                    Spacer()
                 
             }
             .background(Color.whiteBackground)

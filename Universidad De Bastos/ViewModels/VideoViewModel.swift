@@ -11,7 +11,6 @@ class VideoViewModel: ObservableObject {
     @Published var dataToUse: [VideoModel]?
  
      func handleGetVideosSuccess(results: [VideoModel]?){
-        print("what are results", results)
         self.dataToUse = results
     }
     func makeRequest(){

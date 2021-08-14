@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B718F4DB26C31C420058AF2E /* ArticuloCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718F4DA26C31C420058AF2E /* ArticuloCard.swift */; };
+		B718F4DE26C7FEC40058AF2E /* ArticuloList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B718F4DD26C7FEC40058AF2E /* ArticuloList.swift */; };
 		B72A6D4326B6E9450003CF24 /* MocksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D4226B6E9450003CF24 /* MocksData.swift */; };
 		B72A6D7B26BEDFAE0003CF24 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D7A26BEDFAE0003CF24 /* CustomColors.swift */; };
 		B72A6D8426BEF6650003CF24 /* CardStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D8326BEF6650003CF24 /* CardStyles.swift */; };
 		B72A6D8726BEFAA80003CF24 /* CenterTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */; };
 		B72A6D8E26BF1E770003CF24 /* VideoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D8D26BF1E770003CF24 /* VideoList.swift */; };
+		B72A6D9226BF21F90003CF24 /* CentroDeArticulosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D9126BF21F90003CF24 /* CentroDeArticulosView.swift */; };
+		B72A6D9626BF223C0003CF24 /* CentroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D9526BF223C0003CF24 /* CentroView.swift */; };
+		B72A6D9926C02CE90003CF24 /* ArticuloModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D9826C02CE90003CF24 /* ArticuloModel.swift */; };
+		B72A6D9C26C02EE10003CF24 /* ArticuloViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D9B26C02EE10003CF24 /* ArticuloViewModel.swift */; };
+		B72A6D9F26C031530003CF24 /* GetArticulosQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6D9E26C031530003CF24 /* GetArticulosQueryService.swift */; };
+		B72A6DA326C032190003CF24 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72A6DA226C032190003CF24 /* Networking.swift */; };
 		B7559F9626ADB81400EDAF46 /* Universidad_De_BastosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7559F9526ADB81400EDAF46 /* Universidad_De_BastosApp.swift */; };
 		B7559F9826ADB81400EDAF46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7559F9726ADB81400EDAF46 /* ContentView.swift */; };
 		B7559F9A26ADB81700EDAF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7559F9926ADB81700EDAF46 /* Assets.xcassets */; };
@@ -22,17 +30,31 @@
 		B75DDB3026B6DDA7007FE393 /* URLImageStore in Frameworks */ = {isa = PBXBuildFile; productRef = B75DDB2F26B6DDA7007FE393 /* URLImageStore */; };
 		B75DDB3226B6DDA7007FE393 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = B75DDB3126B6DDA7007FE393 /* URLImage */; };
 		B75DDB3526B6DF10007FE393 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DDB3426B6DF10007FE393 /* RemoteImage.swift */; };
+		B7AD710F26C8131A003B7C90 /* BottomTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD710E26C8131A003B7C90 /* BottomTabs.swift */; };
+		B7AD711226C81AFA003B7C90 /* ReadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD711126C81AFA003B7C90 /* ReadButton.swift */; };
+		B7AD711C26C83652003B7C90 /* CentroDeLibrosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD711B26C83652003B7C90 /* CentroDeLibrosView.swift */; };
+		B7AD711F26C837BA003B7C90 /* LibroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD711E26C837BA003B7C90 /* LibroModel.swift */; };
+		B7AD712226C839CB003B7C90 /* LibroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD712126C839CB003B7C90 /* LibroViewModel.swift */; };
+		B7AD712626C83A53003B7C90 /* GetLibrosQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD712526C83A53003B7C90 /* GetLibrosQueryService.swift */; };
 		B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */; };
 		B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */; };
 		B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B718F4DA26C31C420058AF2E /* ArticuloCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticuloCard.swift; sourceTree = "<group>"; };
+		B718F4DD26C7FEC40058AF2E /* ArticuloList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticuloList.swift; sourceTree = "<group>"; };
 		B72A6D4226B6E9450003CF24 /* MocksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MocksData.swift; sourceTree = "<group>"; };
 		B72A6D7A26BEDFAE0003CF24 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		B72A6D8326BEF6650003CF24 /* CardStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStyles.swift; sourceTree = "<group>"; };
 		B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterTitle.swift; sourceTree = "<group>"; };
 		B72A6D8D26BF1E770003CF24 /* VideoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoList.swift; sourceTree = "<group>"; };
+		B72A6D9126BF21F90003CF24 /* CentroDeArticulosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDeArticulosView.swift; sourceTree = "<group>"; };
+		B72A6D9526BF223C0003CF24 /* CentroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroView.swift; sourceTree = "<group>"; };
+		B72A6D9826C02CE90003CF24 /* ArticuloModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticuloModel.swift; sourceTree = "<group>"; };
+		B72A6D9B26C02EE10003CF24 /* ArticuloViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticuloViewModel.swift; sourceTree = "<group>"; };
+		B72A6D9E26C031530003CF24 /* GetArticulosQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticulosQueryService.swift; sourceTree = "<group>"; };
+		B72A6DA226C032190003CF24 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		B7559F9226ADB81400EDAF46 /* Universidad De Bastos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Universidad De Bastos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7559F9526ADB81400EDAF46 /* Universidad_De_BastosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universidad_De_BastosApp.swift; sourceTree = "<group>"; };
 		B7559F9726ADB81400EDAF46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +64,12 @@
 		B75DDB2326B598F7007FE393 /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
 		B75DDB2726B5BE54007FE393 /* VideoPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
 		B75DDB3426B6DF10007FE393 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		B7AD710E26C8131A003B7C90 /* BottomTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabs.swift; sourceTree = "<group>"; };
+		B7AD711126C81AFA003B7C90 /* ReadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadButton.swift; sourceTree = "<group>"; };
+		B7AD711B26C83652003B7C90 /* CentroDeLibrosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDeLibrosView.swift; sourceTree = "<group>"; };
+		B7AD711E26C837BA003B7C90 /* LibroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroModel.swift; sourceTree = "<group>"; };
+		B7AD712126C839CB003B7C90 /* LibroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroViewModel.swift; sourceTree = "<group>"; };
+		B7AD712526C83A53003B7C90 /* GetLibrosQueryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLibrosQueryService.swift; sourceTree = "<group>"; };
 		B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDeVideosView.swift; sourceTree = "<group>"; };
 		B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getVideos.swift; sourceTree = "<group>"; };
 		B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -61,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B718F4E026C8039A0058AF2E /* Articulos */ = {
+			isa = PBXGroup;
+			children = (
+				B72A6D9826C02CE90003CF24 /* ArticuloModel.swift */,
+			);
+			path = Articulos;
+			sourceTree = "<group>";
+		};
 		B72A6D4026B6E92C0003CF24 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,25 @@
 				B72A6D8326BEF6650003CF24 /* CardStyles.swift */,
 			);
 			path = Styles;
+			sourceTree = "<group>";
+		};
+		B72A6D9026BF21DA0003CF24 /* CentroDeArticulos */ = {
+			isa = PBXGroup;
+			children = (
+				B72A6D9126BF21F90003CF24 /* CentroDeArticulosView.swift */,
+				B718F4DA26C31C420058AF2E /* ArticuloCard.swift */,
+				B718F4DD26C7FEC40058AF2E /* ArticuloList.swift */,
+				B7AD711126C81AFA003B7C90 /* ReadButton.swift */,
+			);
+			path = CentroDeArticulos;
+			sourceTree = "<group>";
+		};
+		B72A6DA126C031570003CF24 /* Articulos */ = {
+			isa = PBXGroup;
+			children = (
+				B72A6D9E26C031530003CF24 /* GetArticulosQueryService.swift */,
+			);
+			path = Articulos;
 			sourceTree = "<group>";
 		};
 		B7559F8926ADB81400EDAF46 = {
@@ -132,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				B75DDB2326B598F7007FE393 /* VideoViewModel.swift */,
+				B72A6D9B26C02EE10003CF24 /* ArticuloViewModel.swift */,
+				B7AD712126C839CB003B7C90 /* LibroViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -141,13 +198,42 @@
 			children = (
 				B75DDB3426B6DF10007FE393 /* RemoteImage.swift */,
 				B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */,
+				B72A6D9526BF223C0003CF24 /* CentroView.swift */,
+				B72A6DA226C032190003CF24 /* Networking.swift */,
+				B7AD710E26C8131A003B7C90 /* BottomTabs.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		B7AD711426C835CB003B7C90 /* CentroDeLibros */ = {
+			isa = PBXGroup;
+			children = (
+				B7AD711B26C83652003B7C90 /* CentroDeLibrosView.swift */,
+			);
+			path = CentroDeLibros;
+			sourceTree = "<group>";
+		};
+		B7AD711526C835E6003B7C90 /* Libros */ = {
+			isa = PBXGroup;
+			children = (
+				B7AD711E26C837BA003B7C90 /* LibroModel.swift */,
+			);
+			path = Libros;
+			sourceTree = "<group>";
+		};
+		B7AD712426C83A29003B7C90 /* Libros */ = {
+			isa = PBXGroup;
+			children = (
+				B7AD712526C83A53003B7C90 /* GetLibrosQueryService.swift */,
+			);
+			path = Libros;
 			sourceTree = "<group>";
 		};
 		B7D47CD626ADBC5E0027A8BA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B7AD711526C835E6003B7C90 /* Libros */,
+				B718F4E026C8039A0058AF2E /* Articulos */,
 				B7D47CE326ADEBB20027A8BA /* Videos */,
 			);
 			path = Models;
@@ -156,6 +242,8 @@
 		B7D47CD726ADBC8C0027A8BA /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B7AD712426C83A29003B7C90 /* Libros */,
+				B72A6DA126C031570003CF24 /* Articulos */,
 				B7D47CDE26ADBD5D0027A8BA /* Videos */,
 			);
 			path = Network;
@@ -164,6 +252,8 @@
 		B7D47CD826ADBC970027A8BA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B7AD711426C835CB003B7C90 /* CentroDeLibros */,
+				B72A6D9026BF21DA0003CF24 /* CentroDeArticulos */,
 				B75DDB3726B6DF1E007FE393 /* Shared */,
 				B7D47CD926ADBCDA0027A8BA /* CentroDeVideos */,
 			);
@@ -274,18 +364,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72A6DA326C032190003CF24 /* Networking.swift in Sources */,
+				B7AD711226C81AFA003B7C90 /* ReadButton.swift in Sources */,
 				B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */,
+				B718F4DE26C7FEC40058AF2E /* ArticuloList.swift in Sources */,
 				B7559F9826ADB81400EDAF46 /* ContentView.swift in Sources */,
+				B7AD710F26C8131A003B7C90 /* BottomTabs.swift in Sources */,
+				B72A6D9926C02CE90003CF24 /* ArticuloModel.swift in Sources */,
+				B7AD712226C839CB003B7C90 /* LibroViewModel.swift in Sources */,
+				B72A6D9C26C02EE10003CF24 /* ArticuloViewModel.swift in Sources */,
 				B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */,
+				B7AD711F26C837BA003B7C90 /* LibroModel.swift in Sources */,
+				B718F4DB26C31C420058AF2E /* ArticuloCard.swift in Sources */,
 				B75DDB3526B6DF10007FE393 /* RemoteImage.swift in Sources */,
 				B72A6D8E26BF1E770003CF24 /* VideoList.swift in Sources */,
+				B72A6D9226BF21F90003CF24 /* CentroDeArticulosView.swift in Sources */,
+				B7AD711C26C83652003B7C90 /* CentroDeLibrosView.swift in Sources */,
 				B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */,
 				B75DDB2426B598F7007FE393 /* VideoViewModel.swift in Sources */,
+				B72A6D9F26C031530003CF24 /* GetArticulosQueryService.swift in Sources */,
 				B72A6D7B26BEDFAE0003CF24 /* CustomColors.swift in Sources */,
 				B72A6D8726BEFAA80003CF24 /* CenterTitle.swift in Sources */,
 				B72A6D4326B6E9450003CF24 /* MocksData.swift in Sources */,
 				B72A6D8426BEF6650003CF24 /* CardStyles.swift in Sources */,
 				B75DDB2826B5BE54007FE393 /* VideoPreview.swift in Sources */,
+				B7AD712626C83A53003B7C90 /* GetLibrosQueryService.swift in Sources */,
+				B72A6D9626BF223C0003CF24 /* CentroView.swift in Sources */,
 				B7559F9626ADB81400EDAF46 /* Universidad_De_BastosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

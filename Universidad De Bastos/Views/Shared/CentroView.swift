@@ -1,22 +1,22 @@
 //
-//  CentroDeVideosView.swift
+//  CentroView.swift
 //  Universidad De Bastos
 //
-//  Created by Joseph Wyman on 7/25/21.
+//  Created by Joseph Wyman on 8/7/21.
 //
 
 import SwiftUI
 
-struct CentroDeVideosView: View {
-    @StateObject var viewModel = VideoViewModel()
+struct CentroView: View {
+    @ObservedObject var viewModel : VideoViewModel
+    var CentroItemsList: ([VideoModel]?) -> VideoList
+    //= VideoViewModel()
 //    var testViewModel: VideoModel
+    
 
     func makeRequest(){
-        if (theData == nil){
-            viewModel.makeRequest()
-        }
+        viewModel.makeRequest()
     }
-    
     var theData: [VideoModel]? {
         if ((viewModel.dataToUse) != nil){
             return
@@ -31,34 +31,20 @@ struct CentroDeVideosView: View {
             geometry in
                 VStack(alignment:.leading) {
                     CenterTitle(title: "Videos")
+                     Button("makeRequest", action:makeRequest)
                     if (theData != nil) {
-                        VideoList(videoData: theData)
+                        CentroItemsList(theData)
                     }
-
+                
                 }
-                .onAppear(perform: makeRequest)
                 .frame(maxWidth: .infinity)
         }
         .background(Color.primaryGradient.edgesIgnoringSafeArea(.all))
-    }}
-
-struct CentroDeVideosView_Previews: PreviewProvider {
-    static var previews: some View {
-//        ContentView(testViewModel: VideoModelDataMock)
-        ContentView()
     }
 }
 
-
-//
-//  ContentView.swift
-//  Universidad De Bastos
-//
-//  Created by Joseph Wyman on 7/25/21.
-//
-
-import SwiftUI
-
-
-
-
+//struct CentroView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CentroView()
+//    }
+//}
