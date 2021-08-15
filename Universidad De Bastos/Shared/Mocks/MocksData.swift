@@ -13,3 +13,5 @@ let VideoModelDataMock = VideoModel(_id: "UUID()", categories: ["funny"], hasBee
 
 
 let ArticalModelDataMock = ArticuloModel(_id: "5f5cdbacd5d7353f2e5f6868", url: "https://www.juandemariana.org/ijm-actualidad/analisis-diario/algunas-cuestiones-disputadas-sobre-el-anarcocapitalismo-xx-las", imageUrl: "https://yt3.ggpht.com/a/AATXAJy--rLkJrwRqskKnhYjjpO5OPMDH9IIBcxUftSgWg=s288-c-k-c0xffffffff-no-rj-mo", title: "Algunas cuestiones disputadas sobre el anarcocapitalismo (XX): las tecnologías sociales", date: "2018-03-27T04:00:00.000Z", categories: ["anarcocapitalismo", "fun"], author: "Miguel Anxo Bastos")
+
+let LibroMock = LibroModel(_id: "5f5cdbacd5d7353f2e5f6862", title: "the book title", image: "https://images-na.ssl-images-amazon.com/images/I/41TRttWPjaL._SX352_BO1,204,203,200_.jpg", catagories: ["horror", "fun"], author: "Joe Wyman", locationLink: "https://www.amazon.com/Creadores-Riqueza-Emprendedores-cambiaron-nuestras-ebook/dp/B00642JS2E", hasBeenReadByUser: false, year: 1999)

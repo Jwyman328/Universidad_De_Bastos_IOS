@@ -14,9 +14,26 @@ struct CentroDeLibrosView: View {
         libroViewModel.makeRequest()
     }
     
+    var librosData: [LibroModel]? {
+        if (libroViewModel.libroData != nil){
+            return libroViewModel.libroData
+        } else {
+            return nil
+        }
+    }
+    
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).onAppear(perform: getLibros)
+        VStack {
+            CenterTitle(title: "Libros")
+            if (libroViewModel.libroData != nil){
+                LibroList(libroData: librosData)
+            }else{
+                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            }
+        }.background(Color.primaryGradient.edgesIgnoringSafeArea(.all)).onAppear(perform: getLibros)
+       
+       
     }
 }
 

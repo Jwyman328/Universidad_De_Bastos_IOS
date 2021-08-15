@@ -16,4 +16,5 @@ extension Color {
     static let whiteBackground = Color(red: 249 / 255, green: 248 / 255, blue: 246 / 255)
     static let secondaryGradient = Color(red: 18 / 255, green: 28 / 255, blue: 140 / 255)
     static let primaryGradient = Color(red: 94 / 255, green: 183 / 255, blue: 222 / 255)
+    static let lightGray = Color(red: 211 / 255, green: 211 / 255, blue: 211 / 255)
 }
