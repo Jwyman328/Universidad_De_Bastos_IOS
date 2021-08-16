@@ -46,7 +46,7 @@ struct ArticuloCard: View {
             geometry in
                 VStack(alignment:.leading) {
                     RemoteImage(imageItem: imageURL)
-                        .frame(width: geometry.size.width, height: geometry.size.height / 3, alignment: .trailing)
+                        .frame(width: geometry.size.width, alignment: .trailing)
                         .cornerRadius(CardStyles.CardRadius)
                     Text(title)
                         .padding([.leading, .trailing], 15)

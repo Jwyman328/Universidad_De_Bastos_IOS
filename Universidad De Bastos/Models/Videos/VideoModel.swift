@@ -11,7 +11,7 @@ struct VideoModel: Codable, Hashable {
     
     
     var _id: String
-    var categories:[String]?
+    var categories:[String]
     var hasBeenWatchedByUser: Bool
     var image: String
     var noteCount: Int

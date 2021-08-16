@@ -21,7 +21,7 @@ struct LibroCard: View {
         URL(string:image)
     }
     
-    var isFront = true //make on touch switch
+    @State var isFront = true //make on touch switch
     
     var body: some View {
         GeometryReader {
@@ -32,14 +32,23 @@ struct LibroCard: View {
 
                 }else {
                     Text(title).font(.title)
-                        .frame(maxHeight: .infinity).padding([.leading, .trailing], 15)
-                    Text(author).font(.title2)
-                        .frame(maxHeight: .infinity).padding([.leading, .trailing], 15)
+                        .frame(maxHeight: .infinity)
+                        .padding([.leading, .trailing], 15)
+                        .foregroundColor(.hasReadYellow)
+                    Text(author)
+                        .font(.title2)
+                        .frame(maxHeight: .infinity)
+                        .padding([.leading, .trailing], 15)
+                        .foregroundColor(.hasReadYellow)
+                    
                     IsReadButton(bookId: _id, isRead: hasBeenReadByUser)
+                    
                     GetBookButton(bookSite: locationLink)
                         .frame(maxHeight: .infinity)
                 }
-            }.frame(width: geometry.size.width, alignment: .top).addHasorHasNotBeenReadBorder(hasBeenReadByUser: hasBeenReadByUser)
+            }.frame(width: geometry.size.width, alignment: .top).addHasorHasNotBeenReadBorder(hasBeenReadByUser: hasBeenReadByUser).onTapGesture {
+                isFront.toggle()
+            }
 
         }
 
