@@ -39,6 +39,7 @@ struct VideoFilterModal: View {
         videoViewModel.setSelectedFilters(key: "institution", newValue: institutionValue)
         videoViewModel.setSelectedFilters(key: "type", newValue: typeValue)
         videoViewModel.setSelectedFilters(key: "year", newValue: yearValue)
+        videoViewModel.sortVideos()
 
         dismiss()
     }
@@ -89,7 +90,7 @@ struct VideoFilterModal: View {
 
 struct VideoFilterButton: View {
     @State private var showingSheet = false
-    @StateObject var videoVideoModel = VideoViewModel()
+    @ObservedObject var videoVideoModel : VideoViewModel
     
     func dismiss(){
         showingSheet.toggle()
@@ -114,7 +115,7 @@ struct VideoFilterButton: View {
 
 struct VideoFilterModal_Previews: PreviewProvider {
     static var previews: some View {
-        VideoFilterButton()
+        VideoFilterButton(videoVideoModel: VideoViewModel())
     }
 }
 

@@ -10,17 +10,14 @@ import SwiftUI
 struct CentroView: View {
     @ObservedObject var viewModel : VideoViewModel
     var CentroItemsList: ([VideoModel]?) -> VideoList
-    //= VideoViewModel()
-//    var testViewModel: VideoModel
-    
 
     func makeRequest(){
         viewModel.makeRequest()
     }
     var theData: [VideoModel]? {
-        if ((viewModel.dataToUse) != nil){
+        if ((viewModel.dataToDisplay) != nil){
             return
-                viewModel.dataToUse!
+                viewModel.dataToDisplay!
         }else {
             return nil
         }

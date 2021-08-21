@@ -19,9 +19,9 @@ struct CentroDeVideosView: View {
     }
     
     var theData: [VideoModel]? {
-        if ((viewModel.dataToUse) != nil){
+        if ((viewModel.dataToDisplay) != nil){
             return
-                viewModel.dataToUse!
+                viewModel.dataToDisplay!
         }else {
             return nil
         }
@@ -33,7 +33,7 @@ struct CentroDeVideosView: View {
                 VStack(alignment:.leading) {
                     HStack {
                         CenterTitle(title: "Videos")
-                        VideoFilterButton().padding([.leading, .trailing], 15)
+                        VideoFilterButton(videoVideoModel: viewModel).padding([.leading, .trailing], 15)
                     }
                    
                     if (theData != nil) {

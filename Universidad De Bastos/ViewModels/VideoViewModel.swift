@@ -8,7 +8,7 @@
 import Foundation
 
 class VideoViewModel: ObservableObject {
-    @Published var dataToUse: [VideoModel]?
+    @Published var allVideoData: [VideoModel]?
     @Published var dataToDisplay: [VideoModel]?
     @Published var isFilterModalShowing = false
     
@@ -39,50 +39,49 @@ class VideoViewModel: ObservableObject {
     func setSelectedFilters(key: String, newValue: String){
         print("key value", key, newValue)
         self.selectedFilters[key] = newValue
-//        self.dataToUse = self.sortData()
     }
    
  
      func handleGetVideosSuccess(results: [VideoModel]?){
-        self.dataToUse = results
-        sortData()
+        self.allVideoData = results
+        self.sortVideos()
     }
     func makeRequest(){
         self.queryService.getVideos()
     }
     
+    func sortVideos(){
+        self.dataToDisplay = sortData()
+    }
+    
     func sortData() -> [VideoModel]?{
         //only put in things that are of the selected filters
-        if (dataToUse != nil){
+        if (self.allVideoData != nil){
             var newDataToUse:[VideoModel]? = []
-//            guard dataToUse != nil else {
-//                return nil
-//            }
-            
             let institutionFilter = selectedFilters["institution"]!
             let typeFilter = selectedFilters["type"]!
             let watchedFilter = selectedFilters["watched"]!
             let yearFilter = selectedFilters["year"]!
             
-            for video in dataToUse! {
+            for video in self.allVideoData! {
                 print("here is a vid", institutionFilter)
-                if(institutionFilter != "todos" || video.categories.contains(institutionFilter)){
+                
+ 
+                if(institutionFilter != "todos" && video.categories.contains(institutionFilter) != true){
                     continue
                 }
-                if (typeFilter != "todos" || video.categories.contains(typeFilter)){
+                if (typeFilter != "todos" && video.categories.contains(typeFilter) != true){
                     continue
                 }
-                if (watchedFilter != "todos" || setWatchedValue(watchedValue: watchedFilter) != video.hasBeenWatchedByUser){
+                if (watchedFilter != "todos" && (setWatchedValue(watchedValue: watchedFilter) != video.hasBeenWatchedByUser)){
                     continue
                 }
                 if (yearFilter != "todos" && yearFilter != String(video.year)){
                     continue
                 }
                 //the item has made it now add it to the list
-                print("appending this", video.year)
                 newDataToUse?.append(video)
             }
-//            print("filtered data", video.year)
             return newDataToUse
         }else {
             return nil
