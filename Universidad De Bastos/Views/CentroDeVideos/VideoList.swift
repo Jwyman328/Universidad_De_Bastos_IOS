@@ -18,7 +18,7 @@ struct VideoList: View {
                     VideoPreview(_id: video._id, categories: video.categories, hasBeenWatchedByUser: video.hasBeenWatchedByUser, image: video.image, noteCount: video.noteCount, title: video.title, videoUrl: video.videoUrl, year: video.year).padding(7).frame(height:geometry.size.height / 1.5).listRowBackground(Color.primaryGradient)
                 }
             }
-    //                        .refreshable(action: makeRequest)
+            //.refreshable(action: makeRequest)
         }
 
     }

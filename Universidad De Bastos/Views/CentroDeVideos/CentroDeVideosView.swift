@@ -9,8 +9,6 @@ import SwiftUI
 
 struct CentroDeVideosView: View {
     @StateObject var viewModel = VideoViewModel()
-//    var testViewModel: VideoModel
- 
     
     func makeRequest(){
         if (theData == nil){
@@ -19,7 +17,7 @@ struct CentroDeVideosView: View {
     }
     
     var theData: [VideoModel]? {
-        if ((viewModel.dataToDisplay) != nil){
+        if ((viewModel.dataToDisplay) != nil && viewModel.dataToDisplay != []){
             return
                 viewModel.dataToDisplay!
         }else {
@@ -39,7 +37,6 @@ struct CentroDeVideosView: View {
                     if (theData != nil) {
                         VideoList(videoData: theData)
                     }
-
                 }
                 .onAppear(perform: makeRequest)
                 .frame(maxWidth: .infinity)
