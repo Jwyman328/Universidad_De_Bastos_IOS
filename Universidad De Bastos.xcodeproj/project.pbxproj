@@ -40,6 +40,8 @@
 		B7AD712D26C96FB0003B7C90 /* GetBookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD712C26C96FB0003B7C90 /* GetBookButton.swift */; };
 		B7AD713026C97741003B7C90 /* IsReadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD712F26C97741003B7C90 /* IsReadButton.swift */; };
 		B7AD713326C97AFE003B7C90 /* LibroList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD713226C97AFE003B7C90 /* LibroList.swift */; };
+		B7AD713626CDBCB4003B7C90 /* VideoFilterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD713526CDBCB4003B7C90 /* VideoFilterModal.swift */; };
+		B7AD713D26D15FF2003B7C90 /* FilterDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7AD713C26D15FF2003B7C90 /* FilterDropDown.swift */; };
 		B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */; };
 		B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */; };
 		B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */; };
@@ -78,6 +80,8 @@
 		B7AD712C26C96FB0003B7C90 /* GetBookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBookButton.swift; sourceTree = "<group>"; };
 		B7AD712F26C97741003B7C90 /* IsReadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsReadButton.swift; sourceTree = "<group>"; };
 		B7AD713226C97AFE003B7C90 /* LibroList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroList.swift; sourceTree = "<group>"; };
+		B7AD713526CDBCB4003B7C90 /* VideoFilterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFilterModal.swift; sourceTree = "<group>"; };
+		B7AD713C26D15FF2003B7C90 /* FilterDropDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDropDown.swift; sourceTree = "<group>"; };
 		B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDeVideosView.swift; sourceTree = "<group>"; };
 		B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getVideos.swift; sourceTree = "<group>"; };
 		B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				B72A6D9526BF223C0003CF24 /* CentroView.swift */,
 				B72A6DA226C032190003CF24 /* Networking.swift */,
 				B7AD710E26C8131A003B7C90 /* BottomTabs.swift */,
+				B7AD713C26D15FF2003B7C90 /* FilterDropDown.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				B75DDB2726B5BE54007FE393 /* VideoPreview.swift */,
 				B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */,
 				B72A6D8D26BF1E770003CF24 /* VideoList.swift */,
+				B7AD713526CDBCB4003B7C90 /* VideoFilterModal.swift */,
 			);
 			path = CentroDeVideos;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 				B7AD711F26C837BA003B7C90 /* LibroModel.swift in Sources */,
 				B718F4DB26C31C420058AF2E /* ArticuloCard.swift in Sources */,
 				B75DDB3526B6DF10007FE393 /* RemoteImage.swift in Sources */,
+				B7AD713D26D15FF2003B7C90 /* FilterDropDown.swift in Sources */,
 				B72A6D8E26BF1E770003CF24 /* VideoList.swift in Sources */,
 				B72A6D9226BF21F90003CF24 /* CentroDeArticulosView.swift in Sources */,
 				B7AD711C26C83652003B7C90 /* CentroDeLibrosView.swift in Sources */,
@@ -403,6 +410,7 @@
 				B72A6D4326B6E9450003CF24 /* MocksData.swift in Sources */,
 				B72A6D8426BEF6650003CF24 /* CardStyles.swift in Sources */,
 				B75DDB2826B5BE54007FE393 /* VideoPreview.swift in Sources */,
+				B7AD713626CDBCB4003B7C90 /* VideoFilterModal.swift in Sources */,
 				B7AD713326C97AFE003B7C90 /* LibroList.swift in Sources */,
 				B7AD712626C83A53003B7C90 /* GetLibrosQueryService.swift in Sources */,
 				B72A6D9626BF223C0003CF24 /* CentroView.swift in Sources */,

@@ -10,13 +10,38 @@ import Foundation
 class VideoViewModel: ObservableObject {
     @Published var dataToUse: [VideoModel]?
     @Published var dataToDisplay: [VideoModel]?
+    @Published var isFilterModalShowing = false
     
-    var selectedFilters : [String:String] = [
+    func dismissFilterModal(){
+        isFilterModalShowing = false
+    }
+    
+    func showFilterModal(){
+        isFilterModalShowing = true
+    }
+    
+    @Published var selectedWatched = "todos"
+    
+    @Published var filterOptions : [String : [String]] = [
+        "institution": ["todos","juanDeMariana", "UFM", "xoanDeLugo"],//
+        "type": ["todos", "interview", "conference"],
+        "watched": ["todos", "watched", "not watched"],
+        "year": ["todos", "2012", "2013","2014","2015", "2016", "2017", "2018", "2019", "2020"]
+    ]
+    
+    @Published var selectedFilters : [String:String] = [
         "institution": "todos",
         "type": "todos",
         "watched": "todos",
         "year": "todos"
     ]
+    
+    func setSelectedFilters(key: String, newValue: String){
+        print("key value", key, newValue)
+        self.selectedFilters[key] = newValue
+//        self.dataToUse = self.sortData()
+    }
+   
  
      func handleGetVideosSuccess(results: [VideoModel]?){
         self.dataToUse = results

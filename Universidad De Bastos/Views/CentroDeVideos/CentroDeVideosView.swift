@@ -10,7 +10,8 @@ import SwiftUI
 struct CentroDeVideosView: View {
     @StateObject var viewModel = VideoViewModel()
 //    var testViewModel: VideoModel
-
+ 
+    
     func makeRequest(){
         if (theData == nil){
             viewModel.makeRequest()
@@ -30,7 +31,11 @@ struct CentroDeVideosView: View {
         GeometryReader {
             geometry in
                 VStack(alignment:.leading) {
-                    CenterTitle(title: "Videos")
+                    HStack {
+                        CenterTitle(title: "Videos")
+                        VideoFilterButton().padding([.leading, .trailing], 15)
+                    }
+                   
                     if (theData != nil) {
                         VideoList(videoData: theData)
                     }
