@@ -47,6 +47,9 @@
 		B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */; };
 		B7DEC8CC26D284F6002B3A4B /* NoVideosEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */; };
 		B7DEC8CF26D29024002B3A4B /* BastosButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8CE26D29024002B3A4B /* BastosButton.swift */; };
+		B7DEC8DD26D2ABF2002B3A4B /* ArticulosFilterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8DC26D2ABF2002B3A4B /* ArticulosFilterModal.swift */; };
+		B7DEC8E026D2AC30002B3A4B /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8DF26D2AC30002B3A4B /* FilterButton.swift */; };
+		B7DEC8E426D2B07B002B3A4B /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8E326D2B07B002B3A4B /* DataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +92,9 @@
 		B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoVideosEmptyState.swift; sourceTree = "<group>"; };
 		B7DEC8CE26D29024002B3A4B /* BastosButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BastosButton.swift; sourceTree = "<group>"; };
+		B7DEC8DC26D2ABF2002B3A4B /* ArticulosFilterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticulosFilterModal.swift; sourceTree = "<group>"; };
+		B7DEC8DF26D2AC30002B3A4B /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
+		B7DEC8E326D2B07B002B3A4B /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 		B72A6D4026B6E92C0003CF24 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEC8D126D29C78002B3A4B /* Helpers */,
 				B72A6D7926BEDF960003CF24 /* Styles */,
 				B72A6D4126B6E9310003CF24 /* Mocks */,
 			);
@@ -146,6 +153,7 @@
 				B718F4DA26C31C420058AF2E /* ArticuloCard.swift */,
 				B718F4DD26C7FEC40058AF2E /* ArticuloList.swift */,
 				B7AD711126C81AFA003B7C90 /* ReadButton.swift */,
+				B7DEC8DC26D2ABF2002B3A4B /* ArticulosFilterModal.swift */,
 			);
 			path = CentroDeArticulos;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 		B7559F9426ADB81400EDAF46 /* Universidad De Bastos */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEC8E226D2B062002B3A4B /* Protocols */,
 				B72A6D4026B6E92C0003CF24 /* Shared */,
 				B75DDB2226B598D9007FE393 /* ViewModels */,
 				B7D47CD826ADBC970027A8BA /* Views */,
@@ -219,6 +228,7 @@
 				B7AD710E26C8131A003B7C90 /* BottomTabs.swift */,
 				B7AD713C26D15FF2003B7C90 /* FilterDropDown.swift */,
 				B7DEC8CE26D29024002B3A4B /* BastosButton.swift */,
+				B7DEC8DF26D2AC30002B3A4B /* FilterButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -308,6 +318,21 @@
 				B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */,
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		B7DEC8D126D29C78002B3A4B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B7DEC8E226D2B062002B3A4B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B7DEC8E326D2B07B002B3A4B /* DataViewModel.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +425,7 @@
 				B7AD712226C839CB003B7C90 /* LibroViewModel.swift in Sources */,
 				B72A6D9C26C02EE10003CF24 /* ArticuloViewModel.swift in Sources */,
 				B7AD712D26C96FB0003B7C90 /* GetBookButton.swift in Sources */,
+				B7DEC8E026D2AC30002B3A4B /* FilterButton.swift in Sources */,
 				B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */,
 				B7AD711F26C837BA003B7C90 /* LibroModel.swift in Sources */,
 				B718F4DB26C31C420058AF2E /* ArticuloCard.swift in Sources */,
@@ -409,7 +435,9 @@
 				B72A6D9226BF21F90003CF24 /* CentroDeArticulosView.swift in Sources */,
 				B7AD711C26C83652003B7C90 /* CentroDeLibrosView.swift in Sources */,
 				B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */,
+				B7DEC8E426D2B07B002B3A4B /* DataViewModel.swift in Sources */,
 				B75DDB2426B598F7007FE393 /* VideoViewModel.swift in Sources */,
+				B7DEC8DD26D2ABF2002B3A4B /* ArticulosFilterModal.swift in Sources */,
 				B7DEC8CC26D284F6002B3A4B /* NoVideosEmptyState.swift in Sources */,
 				B72A6D9F26C031530003CF24 /* GetArticulosQueryService.swift in Sources */,
 				B72A6D7B26BEDFAE0003CF24 /* CustomColors.swift in Sources */,

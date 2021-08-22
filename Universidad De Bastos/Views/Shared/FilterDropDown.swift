@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct FilterDropDown: View {
-    @ObservedObject var videoViewModel : VideoViewModel
     @State private var showPicker = false
-    @Binding var watchedValue: String
+    @Binding var selectedValue: String
     let filterType : String
+    let filterOptions :  [String : [String]]
 
     
-    init( videoViewModel: VideoViewModel, filterType: String, watchedValue: Binding<String>) {
-        self.videoViewModel = videoViewModel
+    init( filterOptions:  [String : [String]], filterType: String, selectedValue: Binding<String>) {
+        self.filterOptions = filterOptions
         self.filterType = filterType
-        self._watchedValue = watchedValue
+        self._selectedValue = selectedValue
     }
     
     func showDropDown(){
@@ -37,7 +37,7 @@ struct FilterDropDown: View {
             Text(filterType.capitalizingFirstLetter()).font(.title2).frame(maxWidth:.infinity, alignment: .leading).foregroundColor(.lightGray)
             Button(action: showDropDown) {
                 HStack{
-                    Text(watchedValue)
+                    Text(selectedValue)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     Image(systemName: dropDownImage)
                 }.padding(.horizontal, 15)
@@ -47,9 +47,9 @@ struct FilterDropDown: View {
             
             if (showPicker){
                 Picker(
-                    "Please choose a color", selection: $watchedValue)
+                    "Please choose a color", selection: $selectedValue)
                         {
-                    ForEach(videoViewModel.filterOptions[filterType]!, id: \.self) {
+                    ForEach(filterOptions[filterType]!, id: \.self) {
                         Text($0).frame(maxWidth: .infinity)
                                }
                 }

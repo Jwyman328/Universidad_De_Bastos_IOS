@@ -8,21 +8,12 @@
 import Foundation
 
 class VideoViewModel: ObservableObject {
-    @Published var allVideoData: [VideoModel]?
+    var allVideoData: [VideoModel]?
     @Published var dataToDisplay: [VideoModel]?
     @Published var isFilterModalShowing = false
     
-    func dismissFilterModal(){
-        isFilterModalShowing = false
-    }
-    
-    func showFilterModal(){
-        isFilterModalShowing = true
-    }
-    
-    @Published var selectedWatched = "todos"
-    
-    @Published var filterOptions : [String : [String]] = [
+        
+    var filterOptions : [String : [String]] = [
         "institution": ["todos","juanDeMariana", "UFM", "xoanDeLugo"],//
         "type": ["todos", "interview", "conference"],
         "watched": ["todos", "watched", "not watched"],
@@ -36,8 +27,11 @@ class VideoViewModel: ObservableObject {
         "year": "todos"
     ]
     
+    func makeRequest(){
+        self.queryService.getVideos()
+    }
+    
     func setSelectedFilters(key: String, newValue: String){
-        print("key value", key, newValue)
         self.selectedFilters[key] = newValue
     }
    
@@ -46,9 +40,7 @@ class VideoViewModel: ObservableObject {
         self.allVideoData = results
         self.sortVideos()
     }
-    func makeRequest(){
-        self.queryService.getVideos()
-    }
+
     
     func sortVideos(){
         self.dataToDisplay = sortData()
@@ -86,8 +78,6 @@ class VideoViewModel: ObservableObject {
         }else {
             return nil
         }
-
-        
     }
     
     func setWatchedValue(watchedValue: String) -> Bool{

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CentroDeArticulosView: View {
     @StateObject var articuloViewModel = ArticuloViewModel()
+    @State private var showingSheet = false
     
     func getArticulos() -> Void{
         if (theData == nil){
@@ -18,19 +19,30 @@ struct CentroDeArticulosView: View {
     }
     
     var theData:[ArticuloModel]? {
-//        print("the val",articuloViewModel.articuloData)
-        if (articuloViewModel.articuloData != []){
-            return articuloViewModel.articuloData!
+        if (articuloViewModel.dataToDisplay != []){
+            return articuloViewModel.dataToDisplay!
         }else {
             return nil
         }
+    }
+    
+    func dismissFilterModal(){
+        showingSheet.toggle()
+    }
+    
+    func showFilterModal(){
+        showingSheet.toggle()
     }
     
     var body: some View {
         GeometryReader {
             geometry in
             VStack {
-                CenterTitle(title: "Articulos")
+                HStack {
+                    CenterTitle(title: "Articulos")
+                    ArticalFilterButton(showingSheet: $showingSheet, articuloViewModel: articuloViewModel, dismiss: dismissFilterModal, show: showFilterModal).padding([.leading, .trailing], 15)
+                }
+                
                 if (theData != nil){
                     ArticuloList(articalData: theData)
                 }

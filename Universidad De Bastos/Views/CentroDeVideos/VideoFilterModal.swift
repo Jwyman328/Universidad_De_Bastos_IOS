@@ -9,10 +9,7 @@ import SwiftUI
 
 struct VideoFilterModal: View {
     @ObservedObject var videoViewModel : VideoViewModel
-    var watchedOptions : [String: [String]] {
-        videoViewModel.filterOptions
-    }
-    
+
     @State var watchedValue : String
     @State var institutionValue : String
     @State var typeValue : String
@@ -27,7 +24,6 @@ struct VideoFilterModal: View {
         self._yearValue = State(initialValue: videoViewModel.selectedFilters["year"]!)
         self.videoViewModel = videoViewModel
         self.dismiss = dismiss
-   
     }
 
     @State private var showPicker = false
@@ -72,13 +68,13 @@ struct VideoFilterModal: View {
                     .padding(30)
                     
                 ScrollView() {
-                    FilterDropDown(videoViewModel: videoViewModel, filterType: "watched", watchedValue: $watchedValue)
+                    FilterDropDown(filterOptions: videoViewModel.filterOptions, filterType: "watched", selectedValue: $watchedValue)
                         .padding(.bottom,15)
-                    FilterDropDown(videoViewModel: videoViewModel, filterType: "institution", watchedValue: $institutionValue)
+                    FilterDropDown(filterOptions: videoViewModel.filterOptions, filterType: "institution", selectedValue: $institutionValue)
                         .padding(.bottom,15)
-                    FilterDropDown(videoViewModel: videoViewModel, filterType: "type", watchedValue: $typeValue)
+                    FilterDropDown(filterOptions: videoViewModel.filterOptions, filterType: "type", selectedValue: $typeValue)
                         .padding(.bottom,15)
-                    FilterDropDown(videoViewModel: videoViewModel, filterType: "year", watchedValue: $yearValue)
+                    FilterDropDown(filterOptions: videoViewModel.filterOptions, filterType: "year", selectedValue: $yearValue)
                         .padding(.bottom,15)
                     }
                     .frame(width: geometry.size.width, height: geometry.size.height)
@@ -96,11 +92,7 @@ struct VideoFilterButton: View {
     
 
     var body: some View {
-        Button(action: show) {
-            Image(systemName: "line.horizontal.3.decrease.circle")
-                .resizable()
-                .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        }
+        FilterButton(show:show)
         .sheet(isPresented: $showingSheet) {
             VideoFilterModal(dismiss: dismiss, videoViewModel:videoVideoModel ).padding([.bottom], 100).padding(.horizontal, 15)
         }
