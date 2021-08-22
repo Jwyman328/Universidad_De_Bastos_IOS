@@ -89,16 +89,11 @@ struct VideoFilterModal: View {
     }
 
 struct VideoFilterButton: View {
-    @State private var showingSheet = false
+    @Binding var showingSheet: Bool
     @ObservedObject var videoVideoModel : VideoViewModel
+    var dismiss: () -> Void
+    var show: () -> Void
     
-    func dismiss(){
-        showingSheet.toggle()
-    }
-    
-    func show(){
-        showingSheet.toggle()
-    }
 
     var body: some View {
         Button(action: show) {
@@ -113,9 +108,9 @@ struct VideoFilterButton: View {
 }
 
 
-struct VideoFilterModal_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoFilterButton(videoVideoModel: VideoViewModel())
-    }
-}
+//struct VideoFilterModal_Previews: PreviewProvider {
+//    static var previews: some View {
+//        VideoFilterButton(videoVideoModel: VideoViewModel())
+//    }
+//}
 

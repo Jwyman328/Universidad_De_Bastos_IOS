@@ -9,6 +9,8 @@ import SwiftUI
 
 struct CentroDeVideosView: View {
     @StateObject var viewModel = VideoViewModel()
+    @State private var showingSheet = false
+
     
     func makeRequest(){
         if (theData == nil){
@@ -24,6 +26,14 @@ struct CentroDeVideosView: View {
             return nil
         }
     }
+    
+    func dismissFilterModal(){
+        showingSheet.toggle()
+    }
+    
+    func showFilterModal(){
+        showingSheet.toggle()
+    }
 
     var body: some View {
         GeometryReader {
@@ -31,11 +41,13 @@ struct CentroDeVideosView: View {
                 VStack(alignment:.leading) {
                     HStack {
                         CenterTitle(title: "Videos")
-                        VideoFilterButton(videoVideoModel: viewModel).padding([.leading, .trailing], 15)
+                        VideoFilterButton(showingSheet: $showingSheet, videoVideoModel: viewModel, dismiss: dismissFilterModal, show: showFilterModal).padding([.leading, .trailing], 15)
                     }
                    
                     if (theData != nil) {
                         VideoList(videoData: theData)
+                    }else {
+                        NoVideosEmptyState(mediaType: "Videos", openFilters: showFilterModal)
                     }
                 }
                 .onAppear(perform: makeRequest)

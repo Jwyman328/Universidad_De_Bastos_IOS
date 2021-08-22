@@ -45,6 +45,8 @@
 		B7D47CDB26ADBCF00027A8BA /* CentroDeVideosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */; };
 		B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */; };
 		B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */; };
+		B7DEC8CC26D284F6002B3A4B /* NoVideosEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */; };
+		B7DEC8CF26D29024002B3A4B /* BastosButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8CE26D29024002B3A4B /* BastosButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +87,8 @@
 		B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentroDeVideosView.swift; sourceTree = "<group>"; };
 		B7D47CDF26ADBD7C0027A8BA /* getVideos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getVideos.swift; sourceTree = "<group>"; };
 		B7D47CE426ADEBCD0027A8BA /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
+		B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoVideosEmptyState.swift; sourceTree = "<group>"; };
+		B7DEC8CE26D29024002B3A4B /* BastosButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BastosButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 				B72A6DA226C032190003CF24 /* Networking.swift */,
 				B7AD710E26C8131A003B7C90 /* BottomTabs.swift */,
 				B7AD713C26D15FF2003B7C90 /* FilterDropDown.swift */,
+				B7DEC8CE26D29024002B3A4B /* BastosButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */,
 				B72A6D8D26BF1E770003CF24 /* VideoList.swift */,
 				B7AD713526CDBCB4003B7C90 /* VideoFilterModal.swift */,
+				B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */,
 			);
 			path = CentroDeVideos;
 			sourceTree = "<group>";
@@ -404,9 +410,11 @@
 				B7AD711C26C83652003B7C90 /* CentroDeLibrosView.swift in Sources */,
 				B7D47CE526ADEBCD0027A8BA /* VideoModel.swift in Sources */,
 				B75DDB2426B598F7007FE393 /* VideoViewModel.swift in Sources */,
+				B7DEC8CC26D284F6002B3A4B /* NoVideosEmptyState.swift in Sources */,
 				B72A6D9F26C031530003CF24 /* GetArticulosQueryService.swift in Sources */,
 				B72A6D7B26BEDFAE0003CF24 /* CustomColors.swift in Sources */,
 				B72A6D8726BEFAA80003CF24 /* CenterTitle.swift in Sources */,
+				B7DEC8CF26D29024002B3A4B /* BastosButton.swift in Sources */,
 				B72A6D4326B6E9450003CF24 /* MocksData.swift in Sources */,
 				B72A6D8426BEF6650003CF24 /* CardStyles.swift in Sources */,
 				B75DDB2826B5BE54007FE393 /* VideoPreview.swift in Sources */,
