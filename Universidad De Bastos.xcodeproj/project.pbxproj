@@ -50,6 +50,8 @@
 		B7DEC8DD26D2ABF2002B3A4B /* ArticulosFilterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8DC26D2ABF2002B3A4B /* ArticulosFilterModal.swift */; };
 		B7DEC8E026D2AC30002B3A4B /* FilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8DF26D2AC30002B3A4B /* FilterButton.swift */; };
 		B7DEC8E426D2B07B002B3A4B /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8E326D2B07B002B3A4B /* DataViewModel.swift */; };
+		B7DEC8E826D2BF5A002B3A4B /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8E726D2BF5A002B3A4B /* DateHelpers.swift */; };
+		B7DEC8EB26D2CE77002B3A4B /* LibroFilterModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DEC8EA26D2CE77002B3A4B /* LibroFilterModal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +97,8 @@
 		B7DEC8DC26D2ABF2002B3A4B /* ArticulosFilterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticulosFilterModal.swift; sourceTree = "<group>"; };
 		B7DEC8DF26D2AC30002B3A4B /* FilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButton.swift; sourceTree = "<group>"; };
 		B7DEC8E326D2B07B002B3A4B /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		B7DEC8E726D2BF5A002B3A4B /* DateHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		B7DEC8EA26D2CE77002B3A4B /* LibroFilterModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroFilterModal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +225,7 @@
 		B75DDB3726B6DF1E007FE393 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */,
 				B75DDB3426B6DF10007FE393 /* RemoteImage.swift */,
 				B72A6D8626BEFAA80003CF24 /* CenterTitle.swift */,
 				B72A6D9526BF223C0003CF24 /* CentroView.swift */,
@@ -241,6 +246,7 @@
 				B7AD712C26C96FB0003B7C90 /* GetBookButton.swift */,
 				B7AD712F26C97741003B7C90 /* IsReadButton.swift */,
 				B7AD713226C97AFE003B7C90 /* LibroList.swift */,
+				B7DEC8EA26D2CE77002B3A4B /* LibroFilterModal.swift */,
 			);
 			path = CentroDeLibros;
 			sourceTree = "<group>";
@@ -299,7 +305,6 @@
 				B7D47CDA26ADBCF00027A8BA /* CentroDeVideosView.swift */,
 				B72A6D8D26BF1E770003CF24 /* VideoList.swift */,
 				B7AD713526CDBCB4003B7C90 /* VideoFilterModal.swift */,
-				B7DEC8CB26D284F5002B3A4B /* NoVideosEmptyState.swift */,
 			);
 			path = CentroDeVideos;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 		B7DEC8D126D29C78002B3A4B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B7DEC8E726D2BF5A002B3A4B /* DateHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -417,10 +423,12 @@
 				B7AD711226C81AFA003B7C90 /* ReadButton.swift in Sources */,
 				B7D47CE026ADBD7C0027A8BA /* getVideos.swift in Sources */,
 				B718F4DE26C7FEC40058AF2E /* ArticuloList.swift in Sources */,
+				B7DEC8EB26D2CE77002B3A4B /* LibroFilterModal.swift in Sources */,
 				B7AD712A26C967E1003B7C90 /* LibroCard.swift in Sources */,
 				B7AD713026C97741003B7C90 /* IsReadButton.swift in Sources */,
 				B7559F9826ADB81400EDAF46 /* ContentView.swift in Sources */,
 				B7AD710F26C8131A003B7C90 /* BottomTabs.swift in Sources */,
+				B7DEC8E826D2BF5A002B3A4B /* DateHelpers.swift in Sources */,
 				B72A6D9926C02CE90003CF24 /* ArticuloModel.swift in Sources */,
 				B7AD712226C839CB003B7C90 /* LibroViewModel.swift in Sources */,
 				B72A6D9C26C02EE10003CF24 /* ArticuloViewModel.swift in Sources */,

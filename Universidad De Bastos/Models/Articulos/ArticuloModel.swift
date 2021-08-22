@@ -29,12 +29,7 @@ extension ArticuloModel: Identifiable {
     }
     
     func getDateValueFromdateMDY() -> Date {
-        let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MM-dd-yyyy"
-            dateFormatter.timeZone = TimeZone.current
-            dateFormatter.locale = Locale.current
-        var newDate = dateFormatter.date(from: self.dateMDY)
-        return newDate!
+        return convertDateStringMDYToDate(dateMDY: self.dateMDY)
 
     }
 }

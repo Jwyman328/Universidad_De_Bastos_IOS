@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NoVideosEmptyState: View {
+struct NoDataEmptyState: View {
     var mediaType:String
     var openFilters: () -> Void
     var body: some View {
@@ -23,7 +23,7 @@ struct NoVideosEmptyState: View {
 
 struct NoVideosEmptyState_Previews: PreviewProvider {
     static var previews: some View {
-        NoVideosEmptyState(mediaType: "Videos", openFilters: test)
+        NoDataEmptyState(mediaType: "Videos", openFilters: test)
     }
 }
 

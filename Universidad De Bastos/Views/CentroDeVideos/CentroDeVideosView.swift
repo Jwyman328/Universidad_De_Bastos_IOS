@@ -47,7 +47,7 @@ struct CentroDeVideosView: View {
                     if (theData != nil) {
                         VideoList(videoData: theData)
                     }else {
-                        NoVideosEmptyState(mediaType: "Videos", openFilters: showFilterModal)
+                        NoDataEmptyState(mediaType: "Videos", openFilters: showFilterModal)
                     }
                 }
                 .onAppear(perform: makeRequest)

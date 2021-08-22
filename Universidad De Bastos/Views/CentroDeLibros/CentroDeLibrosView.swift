@@ -9,27 +9,40 @@ import SwiftUI
 
 struct CentroDeLibrosView: View {
     @StateObject var libroViewModel = LibroViewModel()
+    @State private var showingSheet = false
     
     func getLibros(){
         libroViewModel.makeRequest()
     }
     
     var librosData: [LibroModel]? {
-        if (libroViewModel.libroData != nil){
-            return libroViewModel.libroData
+        if (libroViewModel.dataToDisplay != nil && libroViewModel.dataToDisplay! != []){
+            return libroViewModel.dataToDisplay
         } else {
             return nil
         }
     }
     
+    func dismissFilterModal(){
+        showingSheet.toggle()
+    }
+    
+    func showFilterModal(){
+        showingSheet.toggle()
+    }
+    
     
     var body: some View {
         VStack {
-            CenterTitle(title: "Libros")
-            if (libroViewModel.libroData != nil){
+            HStack {
+                CenterTitle(title: "Libros")
+                LibroFilterButton(showingSheet: $showingSheet, libroViewModel: libroViewModel, dismiss: dismissFilterModal, show: showFilterModal).padding([.leading, .trailing], 15)
+            }
+            if (librosData != nil){
                 LibroList(libroData: librosData)
             }else{
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                NoDataEmptyState(mediaType: "Libros", openFilters: showFilterModal)
+
             }
         }.background(Color.primaryGradient.edgesIgnoringSafeArea(.all)).onAppear(perform: getLibros)
        
